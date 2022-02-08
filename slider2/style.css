@@ -1,0 +1,130 @@
+*{
+    box-sizing: border-box;
+}
+  
+body{
+    height: 100%;
+}
+ 
+.svesve{
+    margin:auto;
+    margin-top:10%;
+    display: flex; 
+}
+
+.sve{
+    width: 900px;
+}
+
+.lorem-text{
+    width: 300px;
+    z-index: 4;
+}
+
+.slider{
+    display: block; 
+    width: 1000px;
+    height: 200px;
+}
+
+#slider2{
+    display: block;
+    width: 800px;
+    height: 200px;
+    display: flex;
+}
+
+.wrapper{
+    overflow: hidden;
+    position: relative;
+    height: 200px;
+    z-index: 1;
+}
+
+.wrapper1 {
+    width: 800px;
+}
+
+.wrapper2 {
+    width: 600px;
+}
+  
+.slides, .slides-1, .slides-2 {
+    display: flex;
+    position: relative;
+    top: 0; 
+    width: 10000px;
+    justify-content: flex-end;
+}
+
+.slides-1 {
+    left:-9200px;
+}
+  
+.slides-2 {
+    left:-9400px;
+}
+
+.slides.shifting {
+    transition: left 0.1s ease-out;
+}
+  
+
+.notransition { 
+    transition: none !important;
+}
+  
+img{
+    height: 200px;
+    transition: all 1s;
+    position: relative;
+    border-radius: 8px;
+    padding: 3px;
+    display: inline-flex;
+    margin-right: 0;
+}
+
+.gumbi{
+    display:block;
+    position: relative;
+    width: 200px;
+    z-index: 5;
+}
+
+.control {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: rgb(219, 224, 235);
+    border-radius: 5px;
+    border-color: cornflowerblue;
+}
+  
+  .prev,
+  .next {
+    background-size: 22px;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+  
+  
+  #prev {
+    background-image: url("Assets\\arrow-blue-left.png");
+    background-size: 15px 15px;
+    right: 0;
+    top: 75px;
+    
+  }
+  
+  #next {
+    background-image: url("Assets\\arrow-blue-right.png");
+    background-size: 15px 15px;
+    right: 0;
+    top: 5px;
+  }
+  
+  .prev:active,
+  .next:active {
+    transform: scale(0.8);
+  }
